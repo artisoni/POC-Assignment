@@ -1,23 +1,34 @@
 Feature: Sample_Cucumber test file
 
-Scenario: Test_001
+Scenario: Verify_right_number_of_value_on_screen
 Given The name of the Browser as "Chrome", "https://www.exercise1.com/values"
-When Currency Value for V1 is "12,000"
+When Currency Value textbox apprears
+Then Verify this right number on screen
+
+Scenario: value_grt than zero_current_format
+Given The name of the Browser as "Chrome", "https://www.exercise1.com/values"
+When Currency Value for V2 is ""
 Then Verify this Value is Greather Than Zero
+
+
+Scenario: compare_total_balanace
+Given The name of the Browser as "Chrome", "https://www.exercise1.com/values"
+When Balance Currency Value for bal  is ""
+Then Sum Values seen on screen and get totals
+
+Then comapre with balance value on screen
+
+Scenario: verify_currency_format
+Given The name of the Browser as "Chrome", "https://www.exercise1.com/values"
+When Currency Value for V3 is ""
 Then Verify this Value is Formatted as Currency
-When Currency Value for V2 is "13000"
-Then Verify this Value is Greather Than Zero
-Then Verify this Value is Formatted as Currency
-When Currency Value for V3 is "13000"
-Then Verify this Value is Greather Than Zero
-Then Verify this Value is Formatted as Currency
-When Currency Value for V4 is "13000"
-Then Verify this Value is Greather Than Zero
-Then Verify this Value is Formatted as Currency
-When Currency Value for V5 is "13000"
-Then Verify this Value is Greather Than Zero
-Then Verify this Value is Formatted as Currency
-When Currency Value for V6 is "13000"
-Then Verify this Value is Greather Than Zero
-Then Verify this Value is Formatted as Currency
-Then Verify the Sum is "64,000.00"
+
+Scenario: Verify_balance_value_on_screen
+Given The name of the Browser as "Chrome", "https://www.exercise1.com/values"
+When balance currency  Value textbox apprears
+Then assert balance value on screen
+
+Scenario: mockup
+Given The name of the Browser as "Chrome", "https://www.exercise1.com/values"
+When screen shows up
+Then Verify all testing done 

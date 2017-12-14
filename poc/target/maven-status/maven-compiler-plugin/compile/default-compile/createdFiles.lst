@@ -1,0 +1,5 @@
+main\java\step_defs\common\CommonSteps.class
+main\java\step_defs\web_page\Exercise_Page.class
+main\java\coreutils\Utility.class
+main\java\step_defs\common\Hooks.class
+main\java\coreutils\Global.class
